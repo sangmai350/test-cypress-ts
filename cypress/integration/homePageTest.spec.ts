@@ -32,6 +32,7 @@ describe('Home page', () => {
       .clickContactSupportBtn()
 
     contactPageAction
+      .wait(2000)
       .inputSubjectField('Help!')
       .inputDescriptionField("I'm trying to do X, but I keep getting Z.")
       .inputWebField('test@mctest.com')

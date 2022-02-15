@@ -6,6 +6,7 @@ export class SearchPageAction extends CommonAction {
     cy.log(`Navigate to ${item}`)
     return this
       .clickElement(`a[title="${item}"]`, true)
+      .wait(1000)
   }
 
   selectResult() {
